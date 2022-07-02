@@ -16,7 +16,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
 <div class="login-logo">
-<a href="../../index2.html"><b>Admin</b>LTE</a>
+<a href="../../index2.html"><b>Selamat</b>Datang</a>
 </div>
 
 <div class="card">
@@ -25,8 +25,19 @@
 <!-- Sign in -->
 <div>
     <form action="" method="">
-        <label for="email"></label>
-        <input type="text" name="email" id="email" placeholder="Email">
+        <div>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="password"></label>
+            <input type="password" name="password" id="email" placeholder="Password">
+        </div>
+
+        <div>
+            <button type="submit">Sign in</button>
+        </div>
     </form>
     </div>
 
