@@ -24,16 +24,28 @@
 
 <!-- Sign in -->
 <div>
-    <form action="" method="">
+    <form action="{{ route('login')}}" method="post">
+        @csrf
         <div>
             <label for="email"></label>
             <input type="text" name="email" id="email" placeholder="Email">
         </div>
+        @error('email')
+            <div style="color: red;">
+                {{ $message }}
+            </div>
+
+        @enderror
 
         <div>
             <label for="password"></label>
             <input type="password" name="password" id="email" placeholder="Password">
         </div>
+        @error('email')
+            <div style="color: red;">
+                {{ $message }}
+            </div>
+        @enderror
 
         <div>
             <button type="submit">Sign in</button>
